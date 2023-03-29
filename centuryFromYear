@@ -1,0 +1,20 @@
+def solution(year):
+  
+  if(year % 100 == 0 and year>=1 and year<=2005):
+         century = year / 100
+         century= round (century)
+         return century
+  elif(year % 2 == 0 and year > 100 and year>=1 and year<=2005):   
+        century = (year / 100) 
+        century = round(century)
+        return century 
+  elif( year <= 100 and year>=1 and year<=2005):   
+        century = 1 
+        return century 
+  else:
+        century = (year / 100) +1
+        century = round(century)
+        return century 
+        
+        
+        
